@@ -12,39 +12,47 @@
 <body class="home-page">
 
 <header>
-    <nav class="navbar" style="--width: 1920px; --height: 120px">
+    <nav class="navbar">
 
-        <div class="logo" style="--margin-left: 162px; --margin-right: 322px;">
-            <img src="assets/icons/Logo.svg" alt="StreamVibe Logo" class="logo-icon">
-        </div>
+        <ul class="navbar__logo">1
+            <li><a href="#"><img src="assets/icons/Logo.svg" alt="StreamVibe Logo" class="logo-icon"></a></li>
+        </ul>
 
-        <div class="nav-links button-container" style="--width: 555px; --height: 75px;">
-            <button class="nav-btn active">Home</button>
-            <button class="nav-btn">Movies & Shows</button>
-            <button class="nav-btn">Support</button>
-            <button class="nav-btn">Subscription</button>
-        </div>
+        <ul class="navbar__links">
+            <li><a href="#" class="nav-link nav-link--active">Home</a></li>
+            <li><a href="#" class="nav-link">Movies & Shows</a></li>
+            <li><a href="#" class="nav-link">Support</a></li>
+            <li><a href="#" class="nav-link">Subscriptions</a></li>
+        </ul>
 
-        <div class="nav-icon button-container" style="--width: 98px; --height: 34px; --margin-left: 422px;">
-            <button class="nav-icon-button"><img src="assets/icons/Search.svg" alt="Search"></button>
-            <button class="nav-icon-button"><img src="assets/icons/Notification.svg" alt="Notification"></button>
-        </div>
+        <ul class="navbar__icons">
+            <li class="navbar__icon">
+                <button class="icon-button">
+                    <img src="assets/icons/Search.svg" alt="Search">
+                </button>
+            </li>
+            <li class="navbar__icon">
+                <button class="icon-button">
+                    <img src="assets/icons/Notification.svg" alt="Notification">
+                </button>
+            </li>
+        </ul>
     </nav>
 </header>
-
-<div class="container">
-    <div class="sub-container" style="--width: 1920px; --height: 860px;">
-
-    </div>
-    <div class="center sub-container" style="--width: 1920px; --height: 296px">
-        <div class="text-container" style="--width: 1096px; --height: 182px">
-            <h1>The Best Streaming Experience</h1>
-            <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</p>
+<main class="hero">
+    <div class="hero__content">
+        <div class="hero__background-image"></div>
+        <div class="hero__info">
+            <div class="hero__text--info">
+                <h1>The Best Streaming Experience</h1>
+                <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With
+                    StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more.
+                    You can also create your own watchlists, so you can easily find the content you want to watch.</p>
+                <a class="hero__red-button"><img src="assets/icons/Rectangle511.svg" alt="Rectangle 511" class="red-button__icon">Start Watching Now</a>
+            </div>
         </div>
-        <button class="red-button">
-            <img src="assets/icons/Rectangle511.svg" alt="Rectangle 511" class="button-icon" style="--padding-horizontal: 24; --padding-vertical: 18; margin-right: 4px">Start Watching Now
-        </button>
     </div>
-</div>
+</main>
+
 </body>
 </html>
