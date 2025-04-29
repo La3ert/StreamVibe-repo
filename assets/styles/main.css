@@ -660,7 +660,7 @@
     }
 
     .hero__background-image {
-        background-image: url('/assets/img/desktop/Backgroud.png');
+        background-image: url('../img/desktop/Backgroud.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
