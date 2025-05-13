@@ -14,7 +14,7 @@
 <header>
     <nav class="navbar">
 
-        <ul class="navbar__logo">1
+        <ul class="navbar__logo">
             <li><a href="#"><img src="assets/icons/Logo.svg" alt="StreamVibe Logo" class="logo-icon"></a></li>
         </ul>
 
@@ -39,19 +39,127 @@
         </ul>
     </nav>
 </header>
-<main class="hero">
-    <div class="hero__content">
-        <div class="hero__background-image"></div>
-        <div class="hero__info">
-            <div class="hero__text--info">
-                <h1>The Best Streaming Experience</h1>
-                <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With
-                    StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more.
-                    You can also create your own watchlists, so you can easily find the content you want to watch.</p>
-                <a class="hero__red-button"><img src="assets/icons/Rectangle511.svg" alt="Rectangle 511" class="red-button__icon">Start Watching Now</a>
+<main>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__info">
+                <div class="hero__text--info">
+                    <h1>The Best Streaming Experience</h1>
+
+                    <p>
+                        StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With
+                        StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more.
+                        You can also create your own watchlists, so you can easily find the content you want to watch.
+                    </p>
+
+                    <a href="#" class="btn btn__watch">
+                        <svg class="watch-button__icon" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 2.59479C0.75 0.930971 2.53383 -0.123757 3.9917 0.678068L17.4557 8.08328C18.9668 8.91436 18.9668 11.0856 17.4557 11.9167L3.9917 19.3219C2.53383 20.1238 0.75 19.069 0.75 17.4052V2.59479Z" fill="currentColor"/>
+                        </svg>
+                        Start Watching Now
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="categories">
+        <div class="categories__header">
+            <div class="categories__title">
+                <h4 class="section-title">Explore our wide variety of categories</h4>
+                <p class="section-subtitle">
+                    Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new
+                </p>
+            </div>
+            <div class="categories__button">
+                <button class="button-left" aria-label="Previous">
+                    <img src="assets/icons/ArrowLeft.svg" alt="Previous">
+                </button>
+                <button class="button-right" aria-label="Next">
+                    <img src="assets/icons/ArrowRight.svg" alt="Next">
+                </button>
+            </div>
+        </div>
+
+        <div class="categories__slider">
+            <ul class="categories__list">
+                <li class="category-card">
+                    <div class="category-card__images">
+                        <img src="assets/images/action1.jpg" alt="Action Poster 1">
+                        <img src="assets/images/action2.jpg" alt="Action Poster 2">
+                        <img src="assets/images/action3.jpg" alt="Action Poster 3">
+                        <img src="assets/images/action4.jpg" alt="Action Poster 4">
+                    </div>
+                    <div class="category-card__footer">
+                        <span>Action</span>
+                        <a href="#" class="category-card__arrow">
+                            <img src="assets/icons/ArrowRight.svg" alt="Go to Action">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="category-card">
+                    <div class="category-card__images">
+                        <img src="assets/images/adventure1.jpg" alt="Adventure Poster 1">
+                        <img src="assets/images/adventure2.jpg" alt="Adventure Poster 2">
+                        <img src="assets/images/adventure3.jpg" alt="Adventure Poster 3">
+                        <img src="assets/images/adventure4.jpg" alt="Adventure Poster 4">
+                    </div>
+                    <div class="category-card__footer">
+                        <span>Adventure</span>
+                        <a href="#" class="category-card__arrow">
+                            <img src="assets/icons/ArrowRight.svg" alt="Go to Adventure">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="category-card">
+                    <div class="category-card__images">
+                        <img src="assets/images/comedy1.jpg" alt="Comedy Poster 1">
+                        <img src="assets/images/comedy2.jpg" alt="Comedy Poster 2">
+                        <img src="assets/images/comedy3.jpg" alt="Comedy Poster 3">
+                        <img src="assets/images/comedy4.jpg" alt="Comedy Poster 4">
+                    </div>
+                    <div class="category-card__footer">
+                        <span>Comedy</span>
+                        <a href="#" class="category-card__arrow">
+                            <img src="assets/icons/ArrowRight.svg" alt="Go to Comedy">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="category-card">
+                    <div class="category-card__images">
+                        <img src="assets/images/drama1.jpg" alt="Drama Poster 1">
+                        <img src="assets/images/drama2.jpg" alt="Drama Poster 2">
+                        <img src="assets/images/drama3.jpg" alt="Drama Poster 3">
+                        <img src="assets/images/drama4.jpg" alt="Drama Poster 4">
+                    </div>
+                    <div class="category-card__footer">
+                        <span>Drama</span>
+                        <a href="#" class="category-card__arrow">
+                            <img src="assets/icons/ArrowRight.svg" alt="Go to Drama">
+                        </a>
+                    </div>
+                </li>
+
+                <li class="category-card">
+                    <div class="category-card__images">
+                        <img src="assets/images/horror1.jpg" alt="Horror Poster 1">
+                        <img src="assets/images/horror2.jpg" alt="Horror Poster 2">
+                        <img src="assets/images/horror3.jpg" alt="Horror Poster 3">
+                        <img src="assets/images/horror4.jpg" alt="Horror Poster 4">
+                    </div>
+                    <div class="category-card__footer">
+                        <span>Horror</span>
+                        <a href="#" class="category-card__arrow">
+                            <img src="assets/icons/ArrowRight.svg" alt="Go to Horror">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 </main>
 
 </body>
