@@ -613,10 +613,6 @@
         background: none;
     }
 
-    .image-container {
-
-    }
-
     ul {
         margin: 0;
         padding: 0;
@@ -660,19 +656,42 @@
 
     .categories {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         width: 83.1%;
-        height: 48.15vh;
         margin: 200px auto 0 auto;
+        height: auto; /* уберите фиксированную высоту */
     }
-    .categories__header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    .categories__header {
         width: 100%;
-        height: 100%;
+        margin-bottom: 40px; /* добавьте отступ между заголовком и карточками */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
     }
+
+    .categories__list {
+        display: flex;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .category-card__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .category-card__arrow {
+
+    }
+
+
 
 }
 
@@ -709,10 +728,34 @@
             color: var(--btn-hover-color);
         }
         &.btn-primary{
+            --btn-base-border: 1px solid;
             --btn-base-bg-color: var(--color-black-08);
             --btn-base-border-color: var(--color-black-15);
             --btn-hover-bg-color: var(--color-black-10);
         }
+    }
+
+    .category-card{
+        --card-display: flex;
+        --card-direction: column;
+        --card-base-font-size: var(--font-size-xxs-desk, 18px);
+        --card-base-text-color: var(--color-white, #FFF);
+        --card-base-bg-color: var(--color-black-10, #1A1A1A);
+        --card-base-padding: 30px 30px;
+        --card-base-border-radius: 12px;
+        --card-base-border: 1px solid;
+        --card-base-border-color: var(--color-black-15, #262626);
+
+        display: var(--card-display);
+        flex-direction: var(--card-direction);
+        font-size: var(--card-base-font-size);
+        color: var(--card-base-text-color);
+        background-color: var(--card-base-bg-color);
+        padding: var(--card-base-padding);
+        border-radius: var(--card-base-border-radius);
+        border: var(--card-base-border);
+        border-color: var(--card-base-border-color);
+        text-decoration: none;
     }
 
     
