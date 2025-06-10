@@ -38,6 +38,12 @@
             </li>
         </ul>
     </nav>
+
+    <button class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </header>
 <main>
     <section class="hero">
@@ -53,6 +59,8 @@
                         movies, popular TV shows, and more.
                         You can also create your own watchlists, so you can easily find the content you want to watch.
                     </p>
+
+                    <p class="text-info--subtitle mobile">StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere.</p>
 
                     <a href="#" class="btn btn__watch">
                         <img class="btn-watch__icon" src="assets/icons/Rectangle511.svg" alt="Watch Movies">Start Watching Now
@@ -158,6 +166,8 @@
                 designed to be compatible with a wide range of devices, ensuring that you never miss a moment of
                 entertainment.
             </p>
+
+            <p class="devices__subtitle mobile">With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere.</p>
         </div>
 
         <div class="devices__grid">
@@ -649,6 +659,24 @@
             minus.style.display = "none";
         });
     });
+
+
+    const headerMenu = document.querySelector('.main-header__menu');
+    const headerMenuOpenButton = document.querySelector('.menu-icon');
+    const headerMenuCloseButton = document.querySelector('.close-btn');
+
+    headerMenuOpenButton.addEventListener('click', (e) => {
+        headerMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    headerMenuCloseButton.addEventListener('click', () => {
+        headerMenu.classList.contains('active')
+            ? headerMenu.classList.remove('active')
+            : null;
+        document.body.style.overflow = 'auto';
+    });
+
 </script>
 
 
